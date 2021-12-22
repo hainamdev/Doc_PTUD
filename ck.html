@@ -5,12 +5,19 @@
 <head>
     <meta charset="utf-8" />
 
-    <title> Hướng dẫn sử dụng phần mềm AM Shop</title>
+    <title> Hướng dẫn sử dụng phần mềm quản lý Cửa hàng Karaoke LineCool</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link type="text/css" rel="stylesheet" href="CSS/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="CSS/style.css" />
     <script type="text/javascript" src="JS/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="JS/bootstrap.js"></script>
     <script type="text/javascript" src="JS/Script1.js"></script>
+
+    <style>
+        ol { counter-reset: item }
+        li { display: block }
+        li:before { content: counters(item, ".") " "; counter-increment: item }
+       </style>
 </head>
 
 <body>
@@ -23,7 +30,7 @@
                 <nav class="col-md-12">
                     <div class="navbar navbar-inverse">
                         <ul class="nav navbar-nav">
-                            <li><a href="#">Web AM Shop online</a></li>
+                            <li><a href="#">Karaoke LineCool</a></li>
                             <li><a href="#">Home</a></li>
 
                             <li class="dropdown">
@@ -44,51 +51,76 @@
             <div class="row">
                 <section class="col-md-12">
                     <div class="col-md-12">
-                        <h1 align="center">Hướng dẫn sử dụng phần mềm quản lý bán hàng AM Shop</h1>
+                        <h1 align="center">Hướng dẫn sử dụng phần mềm quản lý cửa hàng Karaoke LineCool</h1>
                     </div>
 
                     <div>
-                        <h3> 1. GIỚI THIỆU ỨNG DỤNG</h3>
+                        <h3><b>Mục Lục</b></h3>
+                        <ol>
+                            <li><b>Giới thiệu chung</b></li>
+                            <li><b>Cấu hình phần cứng phần mềm</b>
+                                <ol>
+                                    <li>Phần mềm</li>
+                                    <li>Phần cứng</li>
+                                </ol>
+                            </li>
+                            <li><b>Các chức năng chính</b>
+                            <ol>
+                                <li><b>Các chức năng của nhân viên quản lý</b>
+                                    <ol>
+                                        <li>Giao diện thông tin nhân viên</li>
+                                        <li>Giao diện nhân viên</li>
+                                        <li>Giao diện chỉnh sửa chức vụ</li>
+                                        <li>Giao diện khách hàng</li>
+                                        <li>Giao diện sản phẩm</li>	
+                                        <li>Giao diện nhà cung cấp</li>
+                                        <li>Giao diện phòng hát</li>
+                                        <li>Giao diện thống kê sản phẩm</li>
+                                        <li>Giao diện thống kê doanh thu</li>
+                                        <li>Giao diện thống kê nhân viên</li>
+                                        <li>Giao diện hóa đơn</li>
+                                        <li>Giao diện tình trạng phòng hát</li>
+                                        <li>Giao diện thanh toán hóa đơn</li>
+
+                                    </ol>
+                                </li>
+                                <li><b>Các chức năng của nhân viên quản lý</b>
+                                    <ol>
+                                        <li>Giao diện thông tin nhân viên</li>
+                                        <li>Giao diện tình trạng phòng hát</li>
+                                        <li>Giao diện thanh toán hóa đơn</li>
+                                        <li>Giao diện khách hàng</li>
+                                        <li>Giao diện hóa đơn</li>
+                                        <li>Giao diện thống kê</li>
+                                    </ol>
+                                </li>
+                                <li><b>Các chức năng của nhân viên quản lý</b>
+                                    <ol>
+                                        <li>Giao diện thông tin nhân viên</li>
+                                        <li>Giao diện sản phẩm</li>	
+                                        <li>Giao diện nhà cung cấp</li>
+                                        <li>Giao diện phòng hát</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                        </ol>
+                    </div>
+
+                    <div>
+                    <h3><b>1. GIỚI THIỆU ỨNG DỤNG</b></h3>
                     </div>
                     <section>
-                        Ứng dụng sử dụng phần mềm Eclipse IDE for Java EE Developers để code tương tác với giao diện, sử
-                        dụng SQL Server để lưu trữ thông tin của người dùng, thông tin sản phẩm, … <br>
-                        Danh sách các chức năng chính của chương trình:<br>
-                        - Đăng nhập vào Tài khoản.<br>
-                        - Chức năng quản lý Hóa đơn<br>
-                        + Thêm hóa đơn<br>
-                        + Xóa hóa đơn<br>
-                        + Cập nhật hóa đơn<br>
-                        + Tìm kiếm hóa đơn theo mã hóa đơn<br>
-                        - Chức năng Thanh Toán<br>
-                        - Chức năng quản lý Sản phẩm<br>
-                        + Xem thông tin sản phẩm<br>
-                        + Thêm một sản phẩm mới<br>
-                        + Lưu thông tin sản phẩm<br>
-                        + Tìm kiếm sản phẩm theo mã<br>
-                        + Tìm kiếm sản phẩm theo tên<br>
-                        + Cập nhật thông tin sản phẩm<br>
-                        - Chức năng quản lý thông tin nhân viên<br>
-                        + Xem thông tin nhân viên<br>
-                        + Thêm một nhân viên mới<br>
-                        + Lưu thông tin nhân viên<br>
-                        + Cập nhật thông tin nhân viên<br>
-                        + Tìm kiếm nhân viên theo tên nhân viên<br>
-                        + Tìm kiếm nhân viên theo mã nhân viên<br>
-                        - Chức năng quản lý thông tin khách hàng:<br>
-                        + Xem thông tin khách hàng<br>
-                        + Thêm khách hàng<br>
-                        + Cập nhật thông tin khách hàng<br>
-                        + Tìm kiếm nhân viên theo tên khách hàng<br>
-                        + Tìm kiếm nhân viên theo mã khách hàng<br>
-                        + Xóa khách hàng<br>
-                        - Chức năng quản lý doanh thu (Quản Lý):<br>
-                        + Thống kê sản phẩm tồn<br>
-                        + Tính doanh thu của nhân viên chỉ định theo ngày, tháng, năm<br>
-
+                        <h4>
+                            &emsp; - Ứng dụng sẽ giúp nhân viên quản lý nắm bắt được những thông tin nhân viên đang làm việc trong cửa hàng. Và ở đó nhân viên quản lý sẽ biết thông tin chi tiết mã, họ tên, địa chỉ, ngày tháng năm sinh, số điện thoại và chỉ nhân viên quản lý cửa hàng mới có thể chỉnh sửa lại giá sản phẩm dịch vụ và xem doanh thu cửa hàng lương nhân viên, đồng thời nhân viên quản lý có thể xem sửa xóa thông tin nhân viên và sản phẩm. Có những trường hợp như sai tên, số điện thoại, địa chỉ,... thì chức năng cập nhật của ứng dụng có thể giúp cho quản lý cập nhật lại những thông tin nhân viên.<br>
+                            &emsp; - Nhân viên quản lý kho sẽ chỉnh số lượng hàng hóa mà karaoke sẽ phục vụ miễn phí cho từng loại phòng khác nhau hoặc những bữa tiệc được thuê phòng riêng để phục vụ. Ngoài ra còn chỉnh sửa số lượng hàng sẽ được nhập vào bao nhiêu là đủ trong tháng để phù hợp với doanh thu karaoke đã bán ra trước đó. Ngoài ra nhân viên kho sẽ đảm nhận vai trò kiểm tra hàng tồn kho còn lại để báo lên quản lý và tiến hành nhập thêm hàng mới về kho phục vụ cho khách hàng, tùy vào loại hàng mà karaoke phục vụ sẽ biết được số lượng món ăn mà khách hàng yêu thích và từ đó tạo ra menu phục vụ khách hàng tốt hơn trong tháng sau.<br>
+                            &emsp; - Khi nhân viên lễ tân bắt đầu ca làm của mình nhân viên lễ tân cần phải đăng nhập tài khoản dành cho nhân viên lễ tân để sử dụng hệ thống. Và trước khi kết thúc ca làm việc thì cần phải đăng xuất tài khoản của mình khỏi hệ thống để tránh ảnh hưởng đến ca sau.<br>
+                            &emsp; - Khi có khách hàng đến sử dụng dịch vụ nhân viên cần phải tư vấn cho khách hàng lựa chọn phòng sau đó nhân viên kiểm tra tình trạng danh sách phòng nếu hết phòng nhân viên cần phải thông báo cho khách hàng để đổi sang dạng phòng khác nếu không khách hàng có thể rời đi. Khi nhân viên kiểm tra và thấy phòng còn thì nhân viên mới bắt đầu tạo phòng trong hệ thống, nhân viên cần yêu cầu khách hàng cung cấp giấy chứng minh, số điện thoại để lưu trữ thông tin cuối cùng nhân viên cần nhấn nút tạo phòng để bắt đầu đánh dấu thời gian sử dụng của khách. Trong quá trình sử dụng dịch vụ nếu khách cần hay đổi phòng thì phải báo cho nhân viên lễ tân để thực hiện qui trình đổi phòng. Để đổi sang phòng khác cho khách nhân viên cần phải kiểm tra lại phòng còn trống và thông báo cho khách hàng tiếp đến nhân viên cần thực hiện các thao tác trên hệ thống. Nhân viên nhấp chuột vào phòng hiện tại khách đang ở và lựa chọn theo yêu cầu khách hàng.<br>
+                            &emsp; - Khách hàng sau khi kết thúc sử dụng dịch vụ của Karaoke nhân viên lễ tân sẽ thực hiện các bước để thanh toán cho khách hàng. Nhân viên sẽ xuất hóa đơn ở phòng khách hàng đã sử dụng và sau đó khách hàng cần xác nhận hóa đơn của mình nêú đúng hóa đơn thì bắt đầu thanh toán bằng tiền mặt, nhân viên sẽ xuất hóa đơn và cảm ơn khách hàng đã sử dụng dịch vụ.<br>
+                        </h4>
                     </section>
                     <div>
-                        <h3>2. CẤU HÌNH PHẦN CỨNG - PHẦN MỀM</h3>
+                        <h3><b>2. CẤU HÌNH PHẦN CỨNG - PHẦN MỀM</b></h3>
                     </div>
                     <div>
                         <h4>2.1 Phần cứng</h4>
@@ -115,7 +147,7 @@
                     <div>
                         <h4>2.2 Phần mềm</h4>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12" id="mucluc">
                         <table class="table table-hover" id="dulieu">
                             <tr>
                                 <th>Tên phần mềm</th>
@@ -152,162 +184,487 @@
                             </tbody>
                         </table>
                     </div>
-                    <div>
-                        <h3>3. CÁC CHỨC NĂNG CHÍNH</h3>
-                        <h4>3.1 Chức năng của Quản Lý</h4>
+                    <div class="doc">
+                        <h3><b>3. CÁC CHỨC NĂNG CHÍNH</b></h3>
+                        <h3 class="doc.1"><b>&emsp;3.1. Chức năng của nhân viên quản lý</b></h3>
+                        <h3 class= "doc.2">&emsp;&emsp;3.1.1.	Giao diện thông tin nhân viên<br></h3>
                         <div>
-                            <h4> Bước 1: Đăng nhập bằng cách nhập mã số nhân viên và mật khẩu rồi nhấn nút đăng nhập
-                                <br></h4>
-                            <img src="Images/h1.png" width="100%" />
-                            <h4> Nếu người dùng quên mật khẩu sẽ chọn nút Quên mật khẩu <br></h4>
-                            <img src="Images/h2.png" width="100%" />
-                            <h4> Trường hợp người dùng quên mật khẩu mà cần được cập nhật thì nhập mã nhân viên rồi bấm
-                                nút Ok <br></h4>
-                            <img src="Images/h3.png" width="100%" />
-                            <h4>Bước 2: Quản lý vô Trang chính là Hóa Đơn <br> </h4>
-                            <img src="Images/h56.png" width="100%" />
-                            <h4>
-                                Trường hợp Thông tin khách hàng đã có thì tìm kiếm khách hàng qua số điện thoại, còn chưa có thì thêm khách hàng mới trong giao diện Khách hàng (Bước 27) <br>
-Bước 1: Quản lý có thể tìm kiếm Khách hàng bằng cách nhập Điện thoại rồi bấm nút “Tìm kiếm”  <br>
-Bước 2: Nhập mã sản phẩm để tìm kiếm Sản phẩm bằng cách nhập mã rồi nhấn nút Tìm kiếm  <br>
-Bước 3: Chỉnh sửa Số lượng hoặc Giảm giá bằng cách nhập text <br>
-Bước 4: Người dùng muốn Thêm sản phẩm thì người dùng chọn nút “Thêm sản phẩm” và chọn “Thanh toán” <br>
-
-                                <br> </h4>
-                            <img src="Images/h4.png" width="100%" />
-
-                            <h4>Bước 10: Quản lý chọn nút Sản phẩm để chuyển giao diện Sản phẩm bằng cách nhấn nút “Sản
-                                phẩm” <br></h4>
-                            <img src="Images/h5.png" width="100%" />
-                            <h4>Bước 11: Người dùng chuyển tab Phiếu nhập hàng và nhập thông tin Sản phẩm rồi bấm nút
-                                “Thêm” để lưu thông tin như hình bên dưới <br></h4>
-                            <img src="Images/h6.png" width="100%" />
-                            <h4>Bước 12: Xem thông tin các sản phẩm được thêm bởi nhân viên nào đó bằng cách nhấp đúp
-                                dòng cần xem <br></h4>
-                            <img src="Images/h7.png" width="100%" />
-                            <h4>Trường hợp người dùng muốn tìm kiếm theo Mã Phiếu Nhập thì nhập thông tin cần tìm vô ô
-                                tìm theo mã phiếu nhập <br></h4>
-                            <img src="Images/h8.png" width="100%" />
-                            <h4>Hoặc có thể tìm kiếm phiếu nhập theo tên bằng cách nhập thông tin cần tìm vô ô Tìm kiếm
-                                theo tên nhân viên <br></h4>
-                            <img src="Images/h9.png" width="100%" />
-                            <h4>Trường hợp muốn sửa thông tin sản phẩm thì chọn phiếu nhập ở bảng “Bảng phiếu nhập”, sau
-                                đó chọn sản phẩm trong Bảng Sản phẩm. Sau đó nhập thông tin cần sửa và nhấn nút “Sửa sản
-                                phẩm”. <br></h4>
-                            <img src="Images/h10.png" width="100%" />
-                            <h4>Bước 13: Có thể chọn dòng sản phẩm trong Bảng Sản Phẩm rồi nhấn nút Xóa nếu người dùng
-                                muốn xóa Sản phẩm trong phiếu nhập <br></h4>
-                            <img src="Images/h11.png" width="100%" />
-                            <h4>Bước 14: Chuyển tab Sản phẩm để xem toàn bộ thông tin Sản phẩm <br></h4>
-                            <img src="Images/h12.png" width="100%" />
-                            <h4>Bước 15: Tìm kiếm Mã sản phẩm bằng cách nhập vào ô Tìm Theo Mã <br></h4>
-                            <img src="Images/h13.png" width="100%" />
-                            <h4>Bước 16: Có thể tìm kiếm theo tên bằng cách nhập thông tin cần tìm vào ô Tìm theo tên:
-                                <br></h4>
-                            <img src="Images/h14.png" width="100%" />
-                            <h4>Bước 17: Muốn sửa thông tin sản phẩm bằng cách tìm kiếm sản phẩm đó hoặc chọn dòng sản
-                                phẩm cần sửa trên Bảng Sản phẩm và làm theo dưới hình: <br></h4>
-                            <img src="Images/h15.png" width="100%" />
-                            <h4>Bước 18: Trường hợp người dùng muốn thêm Loại Sản phẩm bằng cách đổi tab rồi nhập loại
-                                sản phẩm và bấm nút Thêm <br></h4>
-                            <img src="Images/h16.png" width="100%" />
-                            <img src="Images/h17.png" width="100%" />
-                            <h4>Bước 19: Người dùng muốn sửa Loại sản phẩm thì chọn dòng cần sửa rồi nhập thông tin và
-                                bấm nút sửa <br></h4>
-
-                            <img src="Images/h18.png" width="100%" />
-                            <h4>Bước 20: Tìm kiếm loại sản phẩm bằng cách nhập mã loại sản phẩm vào ô “Tìm theo mã” <br>
-                            </h4>
-
-                            <img src="Images/h19.png" width="100%" />
-                            <h4>Bước 21: Tìm kiếm loại sản phẩm bằng cách nhập tên loại sản phẩm vào ô “Tìm theo tên”
-                                <br></h4>
-
-                            <img src="Images/h20.png" width="100%" />
-                            <h4>Bước 22: Chuyển tab Nhà cung cấp để xem chi tiết thông tin nhà cung cấp <br></h4>
-
-                            <img src="Images/h21.png" width="100%" />
-                            <h4>Bước 23: Thêm nhà cung cấp theo hình bên dưới <br></h4>
-
-                            <img src="Images/h22.png" width="100%" />
-                            <h4>Bước 24: Sửa thông tin nhà cung cấp bằng cách chọn dòng cần sửa, nhập thông tin và nhấn
-                                nút sửa <br></h4>
-
-                            <img src="Images/h23.png" width="100%" />
-                            <h4>Bước 25: Có thể tìm kiếm nhà cung cấp bằng cách nhập mã nhà cung cấp theo hình: <br>
-                            </h4>
-
-                            <img src="Images/h24.png" width="100%" />
-                            <h4>Bước 26: Có thể tìm kiếm nhà cung cấp bằng cách nhập tên nhà cung cấp theo hình: <br>
-                            </h4>
-                            <img src="Images/h25.png" width="100%" />
-                            <h4>Bước 27: Trường hợp người dùng muốn thêm khách hàng thì bấm nút Khách hàng để đổi giao diện và nhập thông tin Khách hàng rồi nhấn nút Thêm</h4>
-                            <img src="Images/h26.png" width="100%" />
-                            <h4>Bước 28: Người dùng muốn sửa Khách hàng thì chọn dòng khách hàng cần sửa, nhập thông tin và nhấn nút sửa:</h4>
-                            <img src="Images/h27.png" width="100%" />
-                            <h4>Bước 29: Tìm kiếm khách hàng bằng cách nhập số điện thoại vào ô tìm theo số điện thoại:</h4>
-                            <img src="Images/h28.png" width="100%" />
-                            <h4>Bước 30: Tìm kiếm khách hàng bằng cách nhập tên vào ô tìm theo tên:</h4>
-                            <img src="Images/h29.png" width="100%" />
-                            <h4>Bước 31: Trường hợp người dùng muốn thêm nhân viên thì bấm nút Nhân viên để đổi giao diện và nhập thông tin Nhân viên rồi nhấn nút Thêm</h4>
-                            <img src="Images/h30.png" width="100%" />
-                            <h4>Bước 32: Nếu người dùng muốn sửa thông tin nhân viên thì chọn dòng cần sửa, nhập thông tin và nhấn nút sửa:</h4>
-                            <img src="Images/h31.png" width="100%" />
-                            <h4>Bước 33: Nếu người dùng muốn tìm kiếm theo Mã nhân viên thì chọn nút Mã nhân viên mà nhập thông tin cần tìm vô ô tìm kiếm</h4>
-                            <img src="Images/h32.png" width="100%" />
-                            <h4>Bước 34: Chuyển tab Chức vụ để xem chi tiết chức vụ của nhân viên:</h4>
-                            <img src="Images/h33.png" width="100%" />
-                            <h4>Bước 35: Người dùng muốn xem thông tin Nhân viên theo chức vụ thì nhấn dòng cần xem, thông tin sẽ xuất ra bảng dưới</h4>
-                            <img src="Images/h34.png" width="100%" />
-                            <h4>Bước 36: Người dùng thêm chức vụ bằng cách làm theo hình:</h4>
-                            <img src="Images/h35.png" width="100%" />
-                            <h4>Bước 37: Người dùng sửa chức vụ bằng cách chọn dòng cần sửa, nhập thông tin và nhấn nút sửa:</h4>
-                            <img src="Images/h36.png" width="100%" />
-                            <h4>Bước 38: Chuyển tab Tài khoản để xem chi tiết tài khoản của nhân viên:</h4>
-                            <img src="Images/h37.png" width="100%" />
-                            <h4>Bước 39: Người dùng thêm tài khoản bằng cách làm theo hình:</h4>
-                            <img src="Images/h38.png" width="100%" />
-                            <h4>Bước 40: Người dùng sửa tài khoản bằng cách chọn dòng cần sửa, nhập thông tin và nhấn nút sửa:</h4>
-                            <img src="Images/h39.png" width="100%" />
-                            <h4>Bước 41: Người dùng chọn xóa tài khoản bằng cách chọn dòng và nhấn nút xóa:</h4>
-                            <img src="Images/h40.png" width="100%" />
-                            <h4>Bước 42: Quản lý muốn thống kê thì bấm nút Thống kê để đổi giao diện Thống kê</h4>
-                            <img src="Images/h41.png" width="100%" />
-                            <h4>Bước 43: Quản lý chuyển tab sang Thống kê Sản phẩm, muốn thống kê theo ngày thì chọn ngày bắt đầu và ngày kết thúc rồi chọn Hiển thị doanh thu</h4>
-                            <img src="Images/h42.png" width="100%" />
-                            <img src="Images/h43.png" width="100%" />
-                            <h4>Bước 44: Có thể lọc danh sách theo loại sản phẩm bằng cách chọn loại sản phẩm:</h4>
-                            <img src="Images/h44.png" width="100%" />
-                            <h4>Bước 45: Có thể lọc danh sách theo nhà cung cấp bằng cách chọn nhà cung cấp:</h4>
-                            <img src="Images/h45.png" width="100%" />
-                            <h4>Bước 46: Có thể xuất danh sách theo file pdf:</h4>
-                            <img src="Images/h46.png" width="100%" />
-                            <h4>Bước 47: Có thể xuất danh sách theo file excel:</h4>
-                            <img src="Images/h47.png" width="100%" />
-                            <h4>Bước 48: Có thể xuất danh sách theo biểu đồ cột:</h4>
-                            <img src="Images/h48.png" width="100%" />
-                            <h4>Bước 49: Có thể xuất danh sách theo biểu đồ đường:</h4>
-                            <img src="Images/h49.png" width="100%" />
-                            <h4>Bước 50: Có thể xuất danh sách theo biểu đồ tròn:</h4>
-                            <img src="Images/h50.png" width="100%" />
-                            <h4>Bước 51: Người dùng chuyển tab sang Thống kê doanh thu để xem danh sách doanh thu:</h4>
-                            <img src="Images/h51.png" width="100%" />
-                            <h4>Bước 52: Có thể lọc danh sách theo loại sản phẩm bằng cách chọn loại sản phẩm:</h4>
-                            <img src="Images/h52.png" width="100%" />
-                            <h4>Bước 53: Chuyển tab Thống kê nhân viên để xem chi tiết danh sách nhân viên có doanh thu:</h4>
-                            <img src="Images/h53.png" width="100%" />
-                            <h4>Bước 54: Chuyển giao diện Hổ trợ để xem chi tiết thông tin cũng như cách sử dụng phần mềm:</h4>
-                            <img src="Images/h54.png" width="100%" />
-                            <img src="Images/h55.png" width="100%" />
-                            <h3>3.2	Chức năng của Nhân Viên</h3>
+                            <img src="img/hinh1.png" width="100%" />
+                            <h4>- Màn hình hiển thị các thông tin của nhân viên đã đăng nhập vào hệ thống quản lý karaoke LineCold.
+                            <br>  -Các nút tác vụ để thao tác và xử lý ở hệ thống (Hình 1 - mục 2):
+                            <br></h4>
+                            <h4>&emsp;&emsp;<b> - Cập nhật thông tin nhân viên: </b> Nhấn nút cập nhập thông tin để tiến hành thay đổi thông tin nhân viên. Thông tin nhân viên sau khi thay đổi sẽ được cập nhật ở giao diện nhân viên. <br></h4>
+                            <h4>&emsp;&emsp;<b> - Đổi mật khẩu: </b>Sau khi nhấn nút đổi mật khẩu sẽ hiển thị giao diện và nhân viên có thể tiến hành thay đổi mật khẩu ở giao diện này bao gồm:<br></h4>
+                           
+                            <img src="img/hinh1.1.png" width="50%"/>   
+                            <br>
+                            <h4> - Sau khi nhân viên nhập mật khẩu cũ, mật khẩu mới và xác nhận mật khẩu thì bấm lưu và hệ thống sẽ lưu lại mật khẩu mới và nhân viên sẽ tiến hành đăng nhập bằng mật khẩu vừa mới thay đổi.<br></h4>
+                           
                         </div>
+
+                        <h3 class= "doc.2">&emsp;&emsp;<b>3.1.2.	Giao diện nhân viên</b><br></h3>
+                        <div>
+                            <img src="img/hinh2.png" width="100%" />
+                            <h4>- Giao diện nhân viên sẽ hiển thị ra toàn bộ danh sách nhân viên hiện có trong karaoke LineCold và có thể giúp quản lý có thể quản lý nhân viên bao gồm:
+                                <br>- Lựa chọn để tìm kiếm nhân viên có trong hệ thống hay không (Hình 3 - mục 1):
+                                <br>&emsp;&emsp;<b>- Mã nhân viên:</b> Tìm kiếm theo mã nhân viên đã có trong hệ thống.
+                                <br>&emsp;&emsp;<b>- Tên nhân viên:</b> Tìm kiếm theo tên nhân viên đã có trong hệ thống.
+                                <br>&emsp;&emsp;<b>- Số điện thoại: </b>Tìm kiếm theo số điện thoại đã có trong hệ thống.
+                                <br>&emsp;&emsp;<b>- Email nhân viên:</b> Tìm kiếm theo Email đã có trong hệ thống.
+                                <br>&emsp;&emsp;<b>- Tên chức vụ:</b> Lựa chọn chức vụ đã tạo sẵn trong hệ thống (Nhân viên quản lý, nhân viên lễ tân, nhân viên kho, nhân viên bảo vệ).
+                                <br><br> - Hiển thị danh sách tìm kiếm sản phẩm đã chọn ở mục 1 (Hình 3 - mục 2):
+                                <br>&emsp;&emsp;<b>- Hiển thị danh sách:</b> hiển thị toàn bộ danh sách chi tiết nhân viên có trong hệ thống (Mã nhân viên, tên nhân viên, số điện thoại, email…).
+                                <br><br> - Ấn chọn nhân viên cụ thể ở danh sách mục 2, thông tin nhân viên sẽ hiển thị xuống bảng thông tin như sau (Hình 3 - mục 3):
+                                <br>&emsp;&emsp;<b>- Mã nhân viên:</b> Tạo tự động mã khi xóa rỗng và không thể chỉnh sửa hay thêm bớt mã nhân viên. 
+                                <br>&emsp;&emsp;<b>- Tên nhân viên:</b> Nhập tên nhân viên (Không được để trống).
+                                <br>&emsp;&emsp;<b>- Chức vụ:</b> Lựa chọn chức vụ cho nhân viên (Không được bỏ trống).
+                                <br>&emsp;&emsp;<b>- Ngày sinh:</b> Nhập ngày sinh (Không được để trống). 
+                                <br>&emsp;&emsp;<b>- Chứng minh:</b> Nhập chứng minh nhân viên (Không được để trống).
+                                <br>&emsp;&emsp;<b>- Tiền lương</b>: Nhập vào tiền lương nhân viên (Không được để trống, tiền lương không được nhỏ hơn 0)
+                                <br>&emsp;&emsp;<b>- Số điện thoại:</b>  Nhập số điện thoại (Không được để trống).
+                                <br>&emsp;&emsp;<b>- Email:</b> Nhập email nhân viên (Không được để trống).
+                                <br>&emsp;&emsp;<b>- Địa chỉ:</b>  Nhập địa chỉ nhân viên (Không được để trống)
+                                <br><br> - Các nút tác vụ để thao tác và xử lý ở hệ thống (Hình 3 - mục 4):
+                                <br>&emsp;&emsp;<b>- Thêm:</b> Thêm nhân viên vào hệ thống nếu đã nhập đầy đủ thông tin nhân viên.
+                                <br>&emsp;&emsp;<b>- Xóa rỗng:</b> Xóa rỗng các thông tin vừa nhập ở bảng thông tin nhân viên để trở về trạng thái rỗng ban đầu.
+                                <br>&emsp;&emsp;<b>- Sửa:</b> Sửa một hoặc nhiều thông tin bất kì của nhân viên mong muốn để chỉnh sửa.
+                                <br>&emsp;&emsp;<b>- Xóa:</b> Xóa nhân viên ra khỏi danh sách và hệ thống cửa hàng và đặt lại tên chức vụ thành “Đã nghỉ việc”.
+                            </h4>
+                        </div>
+
+                        <h3 class= "doc.2">&emsp;&emsp;<b>3.1.3.	Giao diện chỉnh sửa chức vụ</b><br></h3>
+                        <div>
+                            <img src="img/hinh2.1.png" width="50%" />
+                            <br>
+                            <h4> - Giao diện giúp quản lý có thể chỉnh sửa được các chức vụ đang có hoặc chưa có trong hệ thống.
+                                <br><br> - Lựa chọn tìm kiếm chức vụ có hay không trên danh sách chức vụ (Hình 3 – mục 1).
+                                <br>&emsp;&emsp;<b>- Tên Chức vụ:</b> Tìm kiếm theo tên chức vụ nhân viên.
+                                <br>&emsp;&emsp;<b>- Mã chức vụ:</b> Tìm kiếm theo mã chức vụ nhân vụ. 
+                                <br><br> - Hiển thị danh sách chức vụ đang có trên hệ thống (Hình 3 – mục 2 ).
+                                <br>&emsp;&emsp;<b>- Hiển thị danh sách:</b> hiển thị toàn bộ danh sách chi tiết chức vụ có trong hệ thống (Mã chức vụ, tên chức vụ).
+                                <br><br> - Các nút tác vụ để thao tác và xử lý ở hệ thống (Hình 3 - mục 3):
+                                <br>&emsp;&emsp;<b>- Thêm:</b> Thêm chức vụ vào hệ thống nếu đã nhập tên chức vụ.
+                                <br>&emsp;&emsp;<b>- Xóa rỗng</b> Xóa rỗng các thông tin vừa nhập ở tên chức vụ để trở về trạng thái rỗng ban đầu.
+                                <br>&emsp;&emsp;<b>- Sửa:</b> Sửa một hoặc nhiều thông tin bất kì của chức vụ mong muốn để chỉnh sửa.
+                                <br>&emsp;&emsp;<b>-  Xóa:</b> Xóa chức vụ ra khỏi danh sách và hệ thống.
+
+                            </h4> 
+                        </div>
+                        <h3 class= "doc.2">&emsp;&emsp;<b>3.1.4.	Giao diện khách hàng</b><br></h3>
+                        <div>
+                            <img src="img/hinh3.png" width="100%" />
+                            <br>
+                            <h4> - Giao diện khách hàng sẽ hiển thị ra toàn bộ danh sách khách hàng đã đến karaoke LineCold và có thể giúp quản lý có thể quản lý khách hàng bao gồm:
+                                <br><br> - Lựa chọn để tìm kiếm khách hàng có trong hệ thống hay không (Hình 3 - mục 1):
+                                <br>&emsp;&emsp;<b>- Mã khách hàng:</b> Tìm kiếm theo mã khách hàng đã có trong hệ thống.
+                                <br>&emsp;&emsp;<b>- Tên khách hàng:</b> Tìm kiếm theo tên khách hàng đã có trong hệ thống.
+                                <br>&emsp;&emsp;<b>- Số điện thoại:</b> Tìm kiếm theo số điện thoại đã có trong hệ thống.
+                                <br>&emsp;&emsp;<b>- Email: Tìm kiếm</b> theo Email đã có trong hệ thống.
+                                <br><br> -  Hiển thị danh sách tìm kiếm sản phẩm đã chọn ở mục 1 (Hình 3 - mục 2):
+                                <br>&emsp;&emsp;<b>- Hiển thị danh sách:</b> hiển thị toàn bộ danh sách chi tiết khách hàng có trong hệ thống (Mã khách hàng, tên khách hàng, số điện thoại, email…).
+                                <br><br> - -Ấn chọn khách hàng cụ thể ở danh sách mục 2, thông tin khách hàng sẽ hiển thị xuống bảng thông tin như sau (Hình 3 - mục 3):
+                                <br>&emsp;&emsp;<b>- Mã khách hàng:</b> tự tạo tự động mã khi xóa rỗng và không thể chỉnh sửa hay thêm bớt mã khách hàng. 
+                                <br>&emsp;&emsp;<b>- Tên khách hàng:</b> Nhập tên khách hàng (Không được để trống).
+                                <br>&emsp;&emsp;<b>- Ngày sinh:</b> Nhập ngày sinh (Không được để trống). 
+                                <br>&emsp;&emsp;<b>- Số điện thoại:</b>  Nhập số điện thoại (Không được để trống).
+                                <br>&emsp;&emsp;<b>- Email:</b> Nhập email khách hàng (Không được để trống).
+                                <br>&emsp;&emsp;<b>- Địa chỉ:</b>  Nhập địa chỉ nhân viên (Không được để trống).
+                                <br><br> - Các nút tác vụ để thao tác và xử lý ở hệ thống (Hình 3 - mục 4):
+                                <br>&emsp;&emsp;<b>- Thêm:</b> Thêm khách hàng vào hệ thống nếu đã nhập đầy đủ thông tin khách hàng.
+                                <br>&emsp;&emsp;<b>- Xóa rỗng:</b> Xóa rỗng các thông tin vừa nhập ở bảng thông tin khách hàng để trở về trạng thái rỗng ban đầu.
+                                <br>&emsp;&emsp;<b>- Sửa:</b> Sửa một hoặc nhiều thông tin bất kì của khách hàng mong muốn để chỉnh sửa.
+                                <br>&emsp;&emsp;<b>- Xóa:</b> Xóa khách hàng ra khỏi danh sách và hệ thống cửa hàng.
+                            </h4> 
+                        </div>
+
+                        <h3 class= "doc.2">&emsp;&emsp;<b>3.1.5.	Giao diện sản phẩm</b><br></h3>
+                        <div>
+                            <img src="img/hinh4.png" width="100%" />
+                            <br>
+                            <h4> - Màn hình hiển thị các thông tin sản phẩm có trong cửa hàng để quản lý sản phẩm và tìm kiếm sản phẩm, hệ thống sẽ liệt kê tự động các sản phẩm như sau:
+                                <br><br> - Lựa chọn để tìm kiếm sản phẩm có trong hệ thống hay không (Hình 4 - mục 1):
+                                <br>&emsp;&emsp;<b>- >Mã sản phẩm:</b> Tìm kiếm theo mã sản phẩm đã có trong hệ thống.
+                                <br>&emsp;&emsp;<b>- Tên sản phẩm:</b> Tìm kiếm theo tên sản phẩm đã có trong hệ thống.
+                                <br>&emsp;&emsp;<b>- Loại sản phẩm:</b> Tìm kiếm theo loại sản phẩm đã được tạo sẵn (Bánh, kẹo, bia,…).
+                                <br>&emsp;&emsp;<b>- Nhà cung cấp:</b> Tìm kiếm theo nhà cung cấp đã được tạo sẵn (Công Ty Cổ Phần Thực Phẩm Việt Nam – VIETFOODS,…).
+                                <br> <br> - Hiển thị danh sách tìm kiếm sản phẩm đã chọn ở mục 1 (Hình 4 - mục 2):
+                                <br>&emsp;&emsp;<b>- Hiển thị danh sách:</b> hiển thị toàn bộ danh sách chi tiết sản phẩm có trong hệ thống (Mã sản phẩm, tên sản phẩm, giá bán, giá nhập…).
+                                <br><br> - Ấn chọn sản phẩm cụ thể ở danh sách mục 2, thông tin sản phẩm sẽ hiển thị xuống bảng thông tin như sau (Hình 4 - mục 3):
+                                <br>&emsp;&emsp;<b>- Mã sản phẩm:</b> tự tạo tự động mã khi xóa rỗng và không thể chỉnh sửa hay thêm bớt mã sản phẩm. 
+                                <br>&emsp;&emsp;<b>- Tên sản phẩm:</b> Nhập tên sản phẩm (nếu có).
+                                <br>&emsp;&emsp;<b>- Giá bán:</b> Nhập giá bán sản phẩm (nếu có). 
+                                <br>&emsp;&emsp;<b>- Giá nhập:</b>  Nhập giá nhập sản phẩm (nếu có).
+                                <br>&emsp;&emsp;<b>- Đơn vị tính:</b>  Nhập đơn vị tính sản phẩm (nếu có).
+                                <br>&emsp;&emsp;<b>- Số lượng:</b>  Nhập giá nhập sản phẩm (nếu có).
+                                <br>&emsp;&emsp;<b>- Loại sản phẩm:</b> Chọn loại sản phẩm đã được tạo sẵn (Bánh, kẹo, bia,…)
+                                <br>&emsp;&emsp;&emsp;+ mục 1: Hiển thị danh sách loại sản phẩm.
+                                <br>&emsp;&emsp;&emsp;+ mục 2: Nhập thông tin loại sản phẩm, mã sản phẩm tự động nhập mã, tên loại nhập tên (nếu có).
+                                <br>&emsp;&emsp;&emsp;+ mục 3: Sau khi nhập thông tin thì có thể thêm loại sản phẩm vào hệ 	thống, sửa lại thông tin, xóa rỗng làm mới lại các thông tin.
+                            </h4>
+                            <img src="img/hinh4.1.png" width="50%" />
+                            <h4><br>&emsp;&emsp;<b>- Nhà cung cấp:</b> Chọn theo nhà cung cấp đã được tạo sẵn (Công Ty Cổ Phần Thực Phẩm Việt Nam – VIETFOODS,…).
+                                <br><br> - Các nút tác vụ để thao tác và xử lý ở hệ thống (Hình 4 - mục 4):
+                                <br>&emsp;&emsp;<b>- Thêm:</b> Thêm sản vào hệ thống nếu đã nhập đầy đủ thông tin sản phẩm.
+                                <br>&emsp;&emsp;<b>- Xóa rỗng:</b> Xóa rỗng các thông tin vừa nhập ở bảng thông tin sản phẩm để trở về trạng thái rỗng ban đầu.
+                                <br>&emsp;&emsp;<b>- Sửa:</b> Sửa một hoặc nhiều thông tin bất kì của sản phẩm mong muốn để chỉnh sửa.
+                                <br>&emsp;&emsp;<b>- Xóa:</b> Xóa sản phẩm ra khỏi danh sách và hệ thống cửa hàng.
+                            </h4>
+                        </div>
+
+                        <h3 class= "doc.2">&emsp;&emsp;<b>3.1.6.	Giao diện nhà cung cấp</b><br></h3>
+
+                        <div>
+                            <img src="img/hinh7.png" width="100%" />
+                            <h4>
+                                - Màn hình hiển thị các thông tin nhà cung cấp có trong cửa hàng để quản lý các nhà cung cấp và tìm kiếm, hệ thống sẽ liệt kê tự động các nhà cung cấp hàng hóa cho cửa hàng như sau:
+                                <br><br> - Lựa chọn để tìm kiếm nhà cung cấp có trong hệ thống hay không (Hình 6 - mục 1):
+                                <br>&emsp;&emsp;<b>- Tìm kiếm nhà cung cấp:</b> Tìm kiếm theo lựa chọn đã được tạo sẵn(Mã nhà cung cấp, tên nhà cung cấp, số điện thoại, email).
+                                <br>&emsp;&emsp;<b>- Làm mới:</b> Làm mới lại thanh tìm kiếm đã nhập sẽ xóa trắng.
+                                <br><br> - Hiển thị danh sách tìm kiếm nhà cung cấp đã chọn ở mục 1 (Hình 6 - mục 2):
+                                <br>&emsp;&emsp;<b>- Hiển thị danh sách:</b> hiển thị toàn bộ danh sách chi tiết nhà cung cấp có trong hệ thống(Mã nhà cung cấp, tên nhà cung cấp,…).	
+                                <br><br> - Ấn chọn sản phẩm cụ thể ở danh sách mục 2, thông tin sản phẩm sẽ hiển thị xuống bảng 	thông tin nhà cung cấp như sau (Hình 6 - mục 3):
+                                <br>&emsp;&emsp;<b>- Mã nhà cung cấp:</b> tự tạo tự động mã khi xóa rỗng và không thể chỉnh sửa hay thêm bớt 	mã nhà cung cấp. 
+                                <br>&emsp;&emsp;<b>- Điện thoại:</b> Nhập số điện thoại (nếu có).
+                                <br>&emsp;&emsp;<b>- Tên nhà cung cấp:</b> Nhập tên nhà cung cấp (nếu có). 
+                                <br>&emsp;&emsp;<b>- Email:</b>  Nhập email  (nếu có).
+                                <br>&emsp;&emsp;<b>- Địa chỉ:</b>  Nhập địa chỉ  (nếu có).
+                                <br><br> - Các nút tác vụ để thao tác và xử lý ở hệ thống (Hình 6 - mục 4):
+                                <br>&emsp;&emsp;<b>- Thêm:</b> Thêm sản vào hệ thống nếu đã nhập đầy đủ thông tin nhà cung cấp.
+                                <br>&emsp;&emsp;<b>- Xóa rỗng:</b> Xóa rỗng các thông tin vừa nhập ở bảng thông tin nhà cung cấp để trở về trạng thái rỗng ban đầu.
+                                <br>&emsp;&emsp;<b>- Sửa:</b> Sửa một hoặc nhiều thông tin bất kì của nhà cung cấp mong muốn để chỉnh sửa.
+                            </h4>
+                        </div>
+
+                        <h3 class= "doc.2">&emsp;&emsp;<b>3.1.7.	Giao diện phòng hát</b><br></h3>
+
+                        <div>
+                            <img src="img/hinh8.png" width="100%" />
+                            <h4>
+                                 - Màn hình hiển thị các thông tin phòng hát trong cửa hàng để quản lý các phòng hát và tìm kiếm, hệ thống sẽ liệt kê tự động các phòng hát như sau:
+                                <br><br> - Lựa chọn để tìm kiếm phòng hát có trong hệ thống hay không(Hình 7 - mục 1):
+                                <br>&emsp;&emsp;<b>- Mã phòng hát:</b> Tìm kiếm theo mã phòng hát đã có trong hệ thống.
+                                <br>&emsp;&emsp;<b>- Tên phòng hát:</b> Tìm kiếm theo tên phòng hát đã có trong hệ thống.
+                                <br>&emsp;&emsp;<b>- Loại sản phẩm:</b> Tìm kiếm theo loại phòng hát đã được tạo sẵn(Phòng VIP, phòng thường).
+                                <br>&emsp;&emsp;<b>- Tìm kiếm:</b> Tìm kiếm theo lựa chọn muốn tìm kiếm.
+                                
+                                <br><br> - Hiển thị danh sách tìm kiếm phòng hát đã chọn ở mục 1 (Hình 7 - mục 2):
+                                <br>&emsp;&emsp;<b>- Hiển thị danh sách:</b> hiển thị toàn bộ danh sách chi tiết phòng hát có trong hệ thống(Mã phòng hát, tên phòng hát,…).	
+                                
+                                <br><br> - Ấn chọn phòng hát cụ thể ở danh sách mục 2, thông tin phòng hát sẽ hiển thị xuống bảng thông tin như sau (Hình 7 - mục 3):
+                                <br>&emsp;&emsp;<b>- Mã phòng hát:</b> tự tạo tự động mã khi xóa rỗng và không thể chỉnh sửa hay thêm bớt mã phòng hát. 
+                                <br>&emsp;&emsp;<b>- Tên mã phòng hát:</b> Nhập tên phòng hát (nếu có).
+                                <br>&emsp;&emsp;<b>- Giá thuê:</b> Nhập giá thuê  (nếu có). 
+                                <br>&emsp;&emsp;<b>- Loại phòng hát:</b> Chọn loại phòng hát đã được tạo sẵn(Phòng VIP, phòng thường).
+                                <br>&emsp;&emsp;&emsp;+ mục 1: Hiển thị danh sách loại phòng hát.
+                                <br>&emsp;&emsp;&emsp;+ mục 2: Nhập thông tin loại sản phẩm, mã sản phẩm tự động nhập 	mã, tên 	loại nhập tên, sức chứa.
+                                <br>&emsp;&emsp;&emsp;+ mục 3: Sau khi nhập thông tin thì có thể thêm loại phòng hát vào hệ 	thống, sửa lại thông tin, xóa rỗng làm mới lại các thông tin
+                                <img src="img/hinh8.1.png" width="50%" /> <br>
+                                <br><br> - Các nút tác vụ để thao tác và xử lý ở  hệ thống(Hình 7 - mục 4):
+                                <br>&emsp;&emsp;<b>- Thêm:</b> Thêm phòng hát vào hệ thống nếu đã nhập đầy đủ thông tin phòng hát.
+                                <br>&emsp;&emsp;<b>- Xóa rỗng:</b> Xóa rỗng các thông tin vừa nhập ở bảng thông tin phòng hát để trở về trạng thái rỗng ban đầu.
+                                <br>&emsp;&emsp;<b>- Sửa:</b> Sửa một hoặc nhiều thông tin bất kì của phòng hát mong muốn để chỉnh sửa.
+                                <br>&emsp;&emsp;<b>- Xóa:</b> Xóa phòng hát ra khỏi danh sách và hệ thống cửa hàng.
+                            </h4>
+                        </div>  
+
+                        <h3 class= "doc.2">&emsp;&emsp;<b>3.1.8.	Giao diện thống kê sản phẩm</b><br></h3>
+
+                        <div>
+                            <img src="img/hinh9.png" width="100%" /> <br>
+                            <h4> - Màn hình này, người dùng sẽ sử dụng dùng để thống kê sản phẩm trong cửa hàng, hệ thống sẽ tự động cập nhật số hàng còn hoặc hết trong các khoảng thời gian sử dụng như sau- Lựa chọn thống kê danh thu sản phẩm theo sự lựa chọn cụ thể sản phẩm (Hình 1 - mục 1):
+                            <br>&emsp;&emsp;<b>- Trạng thái:</b> là chọn tìm theo trạng thái mong muốn kiểm hàng(Tất cả, còn hàng, hết hàng, đã bán).
+                            <br>&emsp;&emsp;<b>- Loại sản phẩm:</b> chọn loại sản phẩm mong muốn để thống kê(Bánh, kẹo, bia…)
+                            <br>&emsp;&emsp;<b>- Nhà cung cấp:</b> Chọn loại nhà cung cấp mong muốn để thống kê theo nhà cung cấp(Công Ty Cổ Phần Thực Phẩm Việt Nam – VIETFOODS, ….)
+                            <br>&emsp;&emsp;<b>- Từ ngày - Đến ngày:</b> lựa chọn theo ngày, tháng bất kì để thống kê sản phẩm mong muốn theo thời gian cố định, khi trạng thái là đã bán.
+                            <br><br> - Thống kê theo lựa chọn đã chọn ở mục 1, nếu sản phẩm thì thống kê sản phẩm thì sẽ hiện thị vào danh sách sản phẩm ở mục 4 (Hình 1 - mục 2):
+                            <br>&emsp;&emsp;<b>- Thống kê:</b> chọn thống kê để tìm danh sách thống kê sau khi đã lựa chọn cụ thể (Trạng thái, loại sản phẩm, nhà cung cấp, từ ngày, đến ngày).
+                            <br>&emsp;&emsp;<b>- Làm mới:</b> trở lại trạng thái chọn ban đầu 
+                            <br>&emsp;&emsp;<b>- In thống kê:</b> sau khi thống kê muốn in danh sách sẽ hiện ra bảng Print in thống kê (PDF, XPS, FAX…)
+                            <br><br> - Hiển thị con số thống kê sản phẩm cụ thể sau khi thống kê ra toàn bộ danh sách sản phẩm (Hình 1 - mục 3):
+                            <br>&emsp;&emsp;<b>- Số sản phẩm:</b> Hiện thị số sản phẩm đang có trong hệ thống.
+                            <br>&emsp;&emsp;<b>- Nhà cung cấp:</b> Hiện thị số nhà cung cấp cung cấp hàng hóa cho cửa hàng đang có trong hệ thống.
+                            <br>&emsp;&emsp;<b>- Loại sản phẩm:</b> Hiện thị số loại sản phẩm đang có trong hệ thống.
+                            <br>&emsp;&emsp;<b>- Tổng chi phí nhập:</b> Hiển thị tổng chi phí nhập hàng của tất cả các sản phẩm ở danh sách có trong hệ thống được liệt kê.
+                            <br><br> - Hiển thị danh sách thông tin sản phẩm ở trong hệ thống cửa hàng (Hình 1 - mục 4):
+                            <br>&emsp;&emsp;<b>- Hiển thị:</b> danh sách các sản phẩm đã lựa chọn thống kê ở trên và hiện thị các thông tin cụ thể của sản phẩm ở danh sách.
+                            </h4>
+                        </div>
+
+                        <h3 class= "doc.2">&emsp;&emsp;<b>3.1.9.	Giao diện thống kê doanh thu</b><br></h3>
+                        <div>
+                            <img src="img/hinh10.png" width="100%" /> <br>
+                            <h4> - Màn hình này, người dùng sẽ sử dụng dùng để thống kê doanh thu trong cửa hàng, hệ thống sẽ tự động cập nhật doanh thu của cửa hàng theo thời gian của cửa hàng trong khoảng thời gian hoạt động sử dụng như sau:
+                            <br><br> - Lựa chọn thống kê doanh thu theo mục chọn cần thống kê(Hình 2 - mục 1):
+                            <br>&emsp;&emsp;<b>- Từ ngày - Đến ngày:</b> lựa chọn từ ngày đến ngày, tháng bất kì nào để lựa chọn thống kê doanh thu mong muốn theo một khoản thời gian cụ thể.
+                            <br>&emsp;&emsp;<b>- Mã phòng hát:</b> thống kê doanh thu theo mã phòng hát nếu trong khoản thời gian lựa chọn có doanh thu của phòng thì sẽ tìm được doanh thu của mã phòng có trong hệ thống.
+                            <br>&emsp;&emsp;<b>- Mã nhân viên:</b> thống kê doanh thu theo mã nhân viên trong khoản thời gian hoạt động nhân viên đã thanh toán được bao nhiêu hóa đơn.
+                            <br>&emsp;&emsp;<b>- Loại phòng hát:</b> lựa chọn thống kê doanh thu theo loại phòng hát (Tất cả, phòng VIP, phòng thường).
+                            <br><br> - Thống kê theo lựa chọn đã chọn ở mục 1, nếu hệ thống thống kê có doanh thu thống kê thì sẽ hiện thị vào danh sách sản phẩm ở mục 4 (Hình 2 - mục 2):
+                            <br>&emsp;&emsp;<b>- Thống kê:</b> chọn thống kê để tìm kiểm danh sách thống kê sau khi đã lựa chọn cụ thể (Từ ngày, đến ngày, loại phòng hát, mã phòng hát, mã nhân viên).
+                            <br>&emsp;&emsp;<b>- Làm mới:</b> trở lại trạng thái chọn ban đầu.
+                            <br>&emsp;&emsp;<b>- In thống kê:</b> sau khi thống kê muốn in danh sách sẽ hiện ra bảng Print in thống kê (PDF, XPS, FAX…).	
+                            <br><br> - Hiển thị con số thống kê doanh thu cụ thể sau khi thống kê ra toàn bộ danh sách doanh thu (Hình 2 - mục 3):
+                            <br>&emsp;&emsp;<b>- Tổng số hóa đơn:</b> Hiện thị tổng tất cả số hóa đơn có trong danh sách.
+                            <br>&emsp;&emsp;<b>- Tổng số hóa đơn:</b> Hiện thị tổng tất cả số doanh thu trong danh sách. 
+                            <br><br> - Hiển thị danh sách thông tin doanh thu ở trong hệ thống cửa hàng (Hình 2 - mục 4):
+                            <br>&emsp;&emsp;<b>- Hiển thị:</b> Hiện thị tất cả danh sách thông tin hóa đơn toàn bộ thông tin cụ thể.
+                            </h4>
+                        </div>
+
+                        <h3 class= "doc.2">&emsp;&emsp;<b>3.1.10.	Giao diện thống kê nhân viên</b><br></h3>
+
+                        <div> 
+                            <img src="img/hinh11.png" width="100%" /> <br>
+                            <h4> - Màn hình này, người dùng sẽ sử dụng dùng để thống kê doanh thu nhân viên đang làm việc tại cửa hàng và các chức vụ của nhân viên, để người dùng dễ quản lý nhân viên như sau:
+                                <br><br> - Lựa chọn thống kê nhân viên theo mục lựa chọn thống kê đã chọn(Hình 3 - mục 1):
+                                <br>&emsp;&emsp;<b>- Giới tính:</b> chọn giới tính của nhân viên(Nam, nữ)
+                                <br>&emsp;&emsp;<b>- Chức vụ:</b> chọn một chức vụ cụ thể mà muốn thống kê theo chức vụ đó (Nhân viên quản lý, nhân viên lễ tân, nhân viên kho, nghỉ việc…)
+                                <br><br> - Thống kê theo lựa chọn đã chọn ở mục 1, nếu hệ thống thống kê có nhân viên đó thì sẽ hiện thị vào danh sách nhân viên ở mục 4 (Hình 3 - mục 2):
+                                <br>&emsp;&emsp;<b>- Thống kê:</b> chọn thống kê để tìm kiểm danh sách thống kê sau khi đã lựa chọn cụ thể (Giới tính, chức vụ).
+                                <br>&emsp;&emsp;<b>- Làm mới:</b> trở lại trạng thái chọn ban đầu.
+                                <br>&emsp;&emsp;<b>- In thống kê:</b> sau khi thống kê muốn in danh sách sẽ hiện ra bảng Print in thống kê (PDF, XPS, FAX…).	
+                                <br><br> - Hiển thị số thống kê nhân viên cụ thể sau khi thống kê ra toàn bộ danh sách nhân viên (Hình 3 - mục 3):
+                                <br>&emsp;&emsp;<b>- Số nhân viên:</b> Hiện thị tổng tất cả số nhân viên có trong danh sách.
+                                <br>&emsp;&emsp;<b>- Chức vụ:</b> Hiện thị tổng tất cả chức vụ nhân viên trong danh sách. 
+                                <br>&emsp;&emsp;<b>- Tổng lương:</b>  Tổng tất cả lương của tất cả các nhân viên đang làm việc tại hệ thống, bao gồm cả nhân viên đã nghỉ việc	
+                                <br><br> - Hiển thị danh sách thông tin nhân viên ở trong hệ thống cửa hàng(Hình 3 - mục 4):
+                                <br>&emsp;&emsp;<b>- Hiển thị:</b> Hiện thị tất cả danh sách thông tin nhân viên toàn bộ thông tin cụ thể.
+                        </h4>
+                    </div>
+
+                    <h3 class= "doc.2">&emsp;&emsp;<b>3.1.11.	Giao diện hóa đơn</b><br></h3>
+
+                    <div>
+                        <img src="img/hinh12.png" width="100%" /> <br>
+                        <h4> - Màn hình hiển thị các thông tin hóa đơn thanh toán hàng hóa trong cửa hàng để quản lý và tìm kiếm hóa đơn, hệ thống sẽ liệt kê tự động các thông tin hóa đơn như sau:
+                            <br><br> - Lựa chọn để tìm kiếm hóa đơn có trong hệ thống hay không (Hình 12 - mục 1):
+                            <br>&emsp;&emsp;<b>- Loại phòng hát:</b> Tìm kiếm theo loại phòng hát đã có trong hệ thống (Tất cả, phòng VIP, phòng thường).
+                            <br>&emsp;&emsp;<b>- Mã hóa đơn:</b> Tìm kiếm theo mã hóa đơn đã có trong hệ thống.
+                            <br>&emsp;&emsp;<b>- Số điện thoại khách hàng:</b> Tìm kiếm theo số điện thoại khách hàng đã có trong hệ thống.
+                            <br>&emsp;&emsp;<b>- Mã nhân viên:</b> Tìm kiếm theo mã nhân viên đã có trong hệ thống.
+                            <br>&emsp;&emsp;<b>- Lọc:</b> Sau khi lựa chọn tìm kiếm theo yêu cần bấm lọc sẽ tìm kiếm theo những gì đã chọn.
+                            
+                          <br><br> - Hiển thị danh sách tìm kiếm hóa đơn đã chọn ở mục 1 (Hình 12 - mục 2):
+                            <br>&emsp;&emsp;<b>- Hiển thị danh sách:</b> hiển thị toàn bộ danh sách chi tiết hóa đơn có trong hệ thống (Mã hóa đơn, ngày lập, chiết khấu, giờ vào, giờ ra…).
+                            
+                          <br><br> - Ấn chọn hóa đơn cụ thể ở danh sách mục 2, thông tin sẽ hiển thị sang bảng thông tin hóa đơn như sau (Hình 12 - mục 3):
+                            <br>&emsp;&emsp;<b>- Thông tin hóa đơn:</b> hiển thị toàn bộ danh sách chi tiết hóa đơn có trong hệ thống để nắm được thông tin hóa đơn bao gồm cả nhân viên tạo hóa đơn, khách hàng sử dụng, số tiền thanh toán hóa đơn và giờ vào giờ ra(Mã HD, Mã PH, Loại phòng, Mã nhân viên, SDT KH….).
+                            
+                          <br><br> - Khi chọn hóa đơn cụ thể ở danh sách mục 2, thông tin sản phẩm sẽ hiển thị sang bảng  như sau (Hình 12 - mục 4):
+                            <br>&emsp;&emsp;<b>- Hiển thị danh sách sản phẩm:</b> hiển thị toàn bộ danh sách chi tiết sản phẩm có trong hóa đơn đó đã được sử dụng(Mã HDBH, Mã sản phẩm, Tên sản phẩm, Đơn giá, Số lượng….).
+                            
+                            
+                          <br><br> - Các tác vụ để thao tác và xử lý ở hệ thống (Hình 12 - mục 5):
+                            <br>&emsp;&emsp;<b>- Xem hóa đơn trước khi in:</b> Yêu cầu xem hóa đơn cụ thể đã chọn kiểm tra hóa 		đơn trước khi in hóa đơn ra.
+                            <br>&emsp;&emsp;<b>- In hóa đơn:</b> sau khi chọn hóa đơn muốn in danh sách sẽ hiện ra bảng Print in thống kê (PDF, XPS, FAX…).
+                            
+                        </h4>
+                    </div>
+
+                    <h3 class= "doc.2">&emsp;&emsp;<b>3.1.13.	Giao diện tình trạng phòng hát</b><br></h3>
+
+                    <div>
+                        <img src="img/hinh13.png" width="100%" /> <br>
+                        <h4> - Màn hình hiển thị các phòng hát, chi tiết các phòng hát trong cửa hàng để quản lý và tìm kiếm phòng hát, nhằm để tạo phòng cho khách hàng và thanh toán, nhân viên sẽ tạo phòng cho khách hàng như sau:
+                            <br><br> - Lựa chọn phòng hát để tìm kiếm phòng trong hệ thống phù hợp với sự lựa chọn (Hình 13 - mục 1):
+                            <br>&emsp;&emsp;<b>- Loại phòng hát:</b> Tìm kiếm theo loại phòng hát đã có trong hệ thống (Tất cả, phòng VIP, phòng thường).
+                            <br>&emsp;&emsp;<b>- Tình trạng:</b> Tìm kiếm theo tình trạng phòng hát trong hệ thống(Tất cả, còn trống, 	đang 	hoạt động).
+                            <br>&emsp;&emsp;<b>- Số điện thoại khách hàng:</b> Tìm kiếm theo số điện thoại khách hàng đã có trong hệ thống.
+                            <br>&emsp;&emsp;<b>- Tên phòng hát:</b> Tìm kiếm theo tên phòng hát đã có trong hệ thống.
+                            <br>&emsp;&emsp;<b>- Mã phòng hát:</b> Tìm kiếm theo mã phòng phòng hát đã có trong hệ thống.
+
+                            <br><br> - Hiển thị danh sách tìm kiếm hóa đơn đã chọn ở mục 1 (Hình 13 - mục 2):
+                            <br>&emsp;&emsp;<b>- Hiển thị danh sách:</b> hiển thị toàn bộ danh sách phòng hát có trong hệ thống (Mã phòng hát, tên phòng, tên loại, sức chứa, giá thuê, tình trạng).
+
+                            <br><br> - Ấn chọn một phòng hát cụ thể ở danh sách mục 2, thông tin sẽ hiển thị sang bảng chi tiết phòng hát như sau (Hình 13 - mục 3):
+                            <br>&emsp;&emsp;<b>- Chi tiết phòng hát:</b> Khi chọn phòng hát ở mục 2, thì thông tin phòng hát đó sẽ hiển thi cụ thể(Mã phòng, tên phòng,…).
+
+                            <br><br> - Tìm kiếm thông tin khách hàng nếu thông tin khách hàng không tìm được trong hệ thống thì bắt buộc tạo thông tin khách hàng mới, nếu đã có thông tin khách hàng thì tìm thông tin khách hàng để tạo phòng như sau (Hình 13 - mục 4 - 4.1):
+                            <br>&emsp;&emsp;<b>- Mã khách hàng:</b> Tìm kiếm theo mã khách hàng có trong hệ thống cần tìm.
+                            <br>&emsp;&emsp;<b>- Số ĐT:</b> Tìm kiếm theo số điện thoại khách hàng đăng kí thành viên trong hệ thống.
+                            <br><br> - Tìm kiếm không thấy thông tin khách hàng trong hệ thống sẽ tạo khách hàng mới vào hệ thống như sau:
+                            <br>&emsp;&emsp;&emsp;+ Mục 1 Thêm thông tin khách hàng với vào hệ thống 
+                            <br>&emsp;&emsp;&emsp;+ Mục 2 Tác vụ thêm thông tin đã nhập vào hệ thống.
+                        </h4>
+                            <img src="img/hinh13.1.png" width="50%" /> <br>
+                            <h4> - Sau khi tìm kiếm thông tin khách hàng ở mục 4.1 thì hệ thống sẽ hiển thị thông tin khách hàng xuống bảng như sau(Hình 13 - mục 4 - 4.2):
+                            <br>&emsp;&emsp;<b>- Hiển thị thông tin khách hàng:</b> Hiển thị thông tin khách hàng(Tên khách, Ngày sinh, Email…).
+                            <br><br> - Các tác vụ để thao tác và xử lý ở hệ thống (Hình 13 - mục 5):
+                            <br>&emsp;&emsp;<b>- Tạo phòng:</b> Tạo phòng khi khách hàng đã được tạo trong hệ thống cửa hàng và 		chọn phòng còn trống sẽ tạo được phòng theo khách hàng.
+                            <br>&emsp;&emsp;<b>- Xóa rỗng:</b> Làm mới các thông tin được trở về trạng thái ban đầu.
+                            <br>&emsp;&emsp;<b>- Hủy phòng:</b> Phòng đã được tạo đang hoạt động trong hệ thống có thể thực hiện hủy phòng đang hoạt động trong hệ thống thành trạng thái còn trống.
+                            <br>&emsp;&emsp;<b>- Xem dịch vụ:</b> Xem dịch vụ có thể xem được phòng hát sử dụng các dịch vụ(Bánh, kẹo, bia,…) hiển thị ra một giao diện mới hình 13.1(Thanh toán hóa đơn phòng hát).
+                            <br>&emsp;&emsp;<b>- Đổi phòng:</b> Lựa chọn phòng bất kì khi muốn thay đổi lựa chọn phòng thao tác đổi phòng sẽ đổi được phòng đang còn trống bất kì và hiển thị ra một giao diện mới.
+                            <br>&emsp;&emsp;&emsp;+ Mục 1 hiển thị danh sách các phòng còn trống(Phòng VIP, Phòng thường). 
+                            <br>&emsp;&emsp;&emsp;+ Mục 2 đổi từ phòng đã chọn sang một phòng mới.
+                            <br>&emsp;&emsp;&emsp;+ Mục 3 tác vụ xác nhận đổi phòng hát muốn đổi và thoát 
+                        </h4>
+                            <img src="img/hinh13.2.png" width="50%" /> <br>
+                    </div>
+
+                    <h3 class= "doc.2">&emsp;&emsp;<b>3.1.14.	Giao diện thanh toán hóa đơn</b><br></h3>
+                    <div>
+                        <img src="img/hinh14.png" width="100%" /> <br>
+                        <h4> - Màn hình hiển thị dịch vụ sử dụng của phòng hát đang sử dụng, chi tiết các dịch vụ sử dụng và thời gian phòng hát để quản lý và tổng số tiền, nhân viên thêm các dịch vụ cho khách hàng như sau:
+                            <br><br> - Hiển thị thông tin phòng hát như sau(Hình 14 - mục 1):
+                            <br>&emsp;&emsp;<b>- Hiển thị thông tin hóa đơn:</b> Hiển thị thông tin phòng hát đang hoạt động  (Mã phòng, tên phòng, loại phòng, giá thuê,…).
+
+                            <br><br> - Lựa chọn để tìm kiếm sản phẩm có trong hệ thống hay không(Hình 14 - mục 2):
+                            <br>&emsp;&emsp;<b>- Tên sản phẩm:</b> Tìm kiếm theo tên sản phẩm đã có trong hệ thống.
+                            <br>&emsp;&emsp;<b>- Mã sản phẩm:</b> Tìm kiếm theo mã sản phẩm đã có trong hệ thống.
+                            <br>&emsp;&emsp;<b>- Loại:</b> Tìm kiếm theo số điện thoại khách hàng đã có trong hệ thống.
+                            <br>&emsp;&emsp;<b>- Lọc:</b> Sau khi lựa chọn tìm kiếm theo yêu cần bấm lọc sẽ tìm kiếm theo những gì đã chọn.
+
+                            <br><br> - Hiển thị bảng thông tin sản phẩm như sau(Hình 14 - mục 3):
+                            <br>&emsp;&emsp;<b>- Hiển thị thông tin sản phẩm:</b> Hiển thị thông tin sản phẩm có trong hệ thống (Mã sản phẩm, tên sản phẩm, đơn giá,…).
+
+                            <br><br> - Hiển thị thông tin sản phẩm đã chọn ở mục 3 như sau(Hình 14 - mục 4):
+                            <br>&emsp;&emsp;<b>- Cập nhập danh sách dịch vụ:</b> Hiển thị thông tin sản phẩm khi đã chọn (Mã sản phẩm, tên sản phẩm, đơn giá, số lượng).
+                            <br>&emsp;&emsp;<b>- Thêm dịch vụ:</b> Chọn thêm dịch vụ khi khách hàng yêu cầu mua, sử dụng sản phẩm.
+                            <br>&emsp;&emsp;<b>- Cập nhập:</b> Cập nhập lại số lượng sản phẩn khi khách hàng muốn tăng thêm hoặc giảm bớt sản phẩm sử dụng.
+                            <br>&emsp;&emsp;<b>- Xóa dịch vụ:</b> Khi sử dụng sản phẩm dịch vụ của cửa hàng lựa chọn của khách hàng có thể yêu cầu xóa khi khách hàng không cần sử dụng có thể xóa sản phẩm ra danh sách dịch vụ.
+
+                            <br><br> - Hiển thị bảng danh sách dịch vụ sản phẩm để thống kê các sản phẩm phòng hát đã sử dụng như sau(Hình 14 - mục 5):
+                            <br>&emsp;&emsp;<b>- Hiển thị danh sách dịch vụ:</b> Hiển thị thông tin sản phẩm có trong hệ thống (Mã sản phẩm, tên sản phẩm, đơn giá,…).
+
+                            <br><br> - Hiển thị tổng số tiền sử dụng dịch vụ sản phẩm phòng hát đã sử dụng như sau(Hình 14 - mục 6):
+                            <br>&emsp;&emsp;<b>- Tổng tiền dịch vụ:</b> Tổng tiền sử dụng sản phẩm trong hệ thống .
+
+                            <br><br> - Các tác vụ để thao tác và xử lý ở hệ thống (Hình 14 - mục 7):
+                            <br>&emsp;&emsp;<b>- Thoát:</b> Thoát khỏi trang thanh toán khi chưa cần thanh toán.
+                            <br>&emsp;&emsp;<b>- Xem hóa đơn:</b> Chọn xem hóa đơn sẽ hiển thị bảng hóa đơn bao gồm toàn bộ sản phẩm, dịch vụ sử dụng và thời gian sử dụng 14 - mục 1. Và mục 2 - 14 tác vụ thanh toán hóa đơn.
+                            <br>&emsp;&emsp;&emsp;+ Mục 1 hiển thị thông tin hóa đơn để thanh toán. 
+                            <br>&emsp;&emsp;&emsp;+ Mục 2 hiển thị thông tin sản phẩm dịch dụ khách hàng đã dùng sản phẩm.
+                            <br>&emsp;&emsp;&emsp;+ Mục 3 Tổng tiền các dịch vụ bao gồm thuế, giảm giá, tổng tiền… 
+                            <br>&emsp;&emsp;&emsp;+ Mục 4 tác vụ thanh toán hóa đơn ra số tiền cụ thể, và tác vụ thoát khỏi thanh toán.
+                        </h4>
+                        <img src="img/hinh14.1.png" width="50%" /> <br>
+                    </div>
+
+                    
+                    <h3 class="doc.1"><b>&emsp;3.2.	Chức năng của nhân viên lễ tân</b></h3>
+                    <h3 class= "doc.2"><b>&emsp;&emsp;3.2.1.	Giao diện thông tin nhân viên</b><br></h3>
+                    <div>
+                        <h4>&emsp;&emsp;&emsp; - Giao diện thông tin nhân viên của nhân viên lễ tân có các chức năng là quyền hạn giống như quản lý. Khách hàng có thể tìm hiểu <b><u>tại đây</u></b></h4>
+                    </div>
+                    <h3 class= "doc.2"><b>&emsp;&emsp;3.2.2.	Giao diện tình trạng phòng hát</b><br></h3>
+                    <div>
+                        <h4>&emsp;&emsp;&emsp; - Giao diện tình trạng phòng hát của nhân viên lễ tân có các chức năng là quyền hạn giống như quản lý. Khách hàng có thể tìm hiểu <b><u>tại đây</u></b></h4>
+                    </div>
+                    <h3 class= "doc.2"><b>&emsp;&emsp;3.2.3.	Giao diện thanh toán hóa đơn phòng hát</b><br></h3>
+                    <div>
+                        <h4>&emsp;&emsp;&emsp; - Giao diện thanh toán hóa đơn phòng hát của nhân viên lễ tân có các chức năng là quyền hạn giống như quản lý. Khách hàng có thể tìm hiểu <b><u>tại đây</u></b></h4>
+                    </div>
+                    <h3 class= "doc.2"><b>&emsp;&emsp;3.2.4.	Giao diện khách hàng</b><br></h3>
+                    <div>
+                        <h4>&emsp;&emsp;&emsp; - Giao diện khách hàng của nhân viên lễ tân có các chức năng là quyền hạn giống như quản lý. Khách hàng có thể tìm hiểu <b><u>tại đây</u></b></h4>
+                    </div>
+                    <h3 class= "doc.2"><b>&emsp;&emsp;3.2.5.	Giao diện hóa đơn</b><br></h3>
+                    <div>
+                        <img src="img/hinh19.jpg" width="100%" /> <br>
+                        <h4> - Màn hình hiển thị các thông tin hóa đơn thanh toán hàng hóa trong cửa hàng để lễ tân tìm kiếm hóa đơn, hệ thống sẽ liệt kê tự động các thông tin hóa đơn như sau:
+                        <br><br> - Lựa chọn để tìm kiếm hóa đơn có trong hệ thống hay không và nhân viên lễ tân chỉ có thể xem hóa đơn mà bản thân đã phục vụ trong ngày (Hình 17 - mục 1):
+                        <br>&emsp;&emsp;<b>- Mã hóa đơn:</b> Tìm kiếm theo mã hóa đơn đã có trong hệ thống.
+                        <br>&emsp;&emsp;<b>- Số điện thoại:</b> Tìm kiếm theo số điện thoại khách hàng đã có trong hệ thống.
+                        <br>&emsp;&emsp;<b>- Mã nhân viên:</b> Tìm kiếm theo mã nhân viên đã có trong hệ thống.
+                        <br>&emsp;&emsp;<b>- Lọc:</b> Sau khi lựa chọn tìm kiếm theo yêu cần bấm lọc sẽ tìm kiếm theo những gì đã chọn.
+                            
+                        <br><br> - Hiển thị danh sách tìm kiếm hóa đơn đã chọn ở mục 1 (Hình 17 - mục 2):
+                        <br>&emsp;&emsp;<b>- Hiển thị danh sách:</b> hiển thị toàn bộ danh sách chi tiết hóa đơn có trong hệ thống (Mã hóa đơn, ngày lập, chiết khấu, giờ vào, giờ ra…).
+                            
+                        <br><br> - Ấn chọn hóa đơn cụ thể ở danh sách mục 2, thông tin sẽ hiển thị sang bảng thông tin hóa đơn như sau (Hình 17 - mục 3):
+                        <br>&emsp;&emsp;<b>- Thông tin hóa đơn:</b> hiển thị toàn bộ danh sách chi tiết hóa đơn có trong hệ thống để nắm được thông tin hóa đơn bao gồm cả nhân viên tạo hóa đơn, khách hàng sử dụng, số tiền thanh toán hóa đơn và giờ vào giờ ra(Mã HD, Mã PH, Loại phòng, Mã nhân viên, SDT KH….).
+                            
+                        <br><br> - Khi chọn hóa đơn cụ thể ở danh sách mục 2, thông tin sản phẩm sẽ hiển thị sang bảng  như sau (Hình 17 - mục 4):
+                        <br>&emsp;&emsp;<b>- Hiển thị danh sách sản phẩm:</b> hiển thị toàn bộ danh sách chi tiết sản phẩm có trong hóa đơn đó đã được sử dụng(Mã HDBH, Mã sản phẩm, Tên sản phẩm, Đơn giá, Số lượng….).
+                            
+                            
+                        <br><br> - Các tác vụ để thao tác và xử lý ở hệ thống (Hình 17 - mục 5):
+                        <br>&emsp;&emsp;<b>- In hóa đơn:</b> sau khi chọn hóa đơn muốn in danh sách sẽ hiện ra bảng Print in thống kê (PDF, XPS, FAX…).
+                        </h4>
+                    </div>
+
+                    <h3 class= "doc.2"><b>&emsp;&emsp;3.2.6.	Giao diện thống kê</b><br></h3>
+                    <div>
+                        <img src="img/hinh20.jpg" width="100%" /> <br>
+                        <h4> - Màn hình này, nhân viên lễ tân sẽ sử dụng dùng để thống kê doanh thu đã phục vụ được trong ngày, nhân viên lễ tân chỉ có thể xem doanh thu trong ngày hôm đó như sau:
+                        <br><br> - Lựa chọn thống kê doanh thu theo mục chọn cần thống kê(Hình 20 - mục 1):
+                         <br>&emsp;&emsp;<b>- Từ ngày - Đến ngày:</b>  nhân viên lễ tân chỉ có thể thống kê doanh thu trong ngày.
+                         <br>&emsp;&emsp;<b>- Loại phòng hát:</b>  lựa chọn thống kê doanh thu theo loại phòng hát (Tất cả, phòng VIP, phòng thường).
+                        <br><br> - Thống kê theo lựa chọn đã chọn ở mục 1 (Hình 20 - mục 1):
+                         <br>&emsp;&emsp;<b>- Thống kê:</b>  chọn thống kê để tìm kiểm danh sách thống kê sau khi đã lựa chọn cụ thể (Từ ngày, đến ngày, loại phòng hát, mã phòng hát, mã nhân viên).
+                         <br>&emsp;&emsp;<b>- Làm mới:</b>  trở lại trạng thái chọn ban đầu.
+                         <br>&emsp;&emsp;<b>- In thống kê:</b>  sau khi thống kê muốn in danh sách sẽ hiện ra bảng Print in thống kê (PDF, XPS, FAX…).	
+                        <br><br> - Hiển thị con số thống kê doanh thu cụ thể sau khi thống kê ra toàn bộ danh sách doanh thu 
+                            (Hình 20 - mục 3):
+                         <br>&emsp;&emsp;<b>- Tổng số hóa đơn:</b>  Hiện thị tổng tất cả số hóa đơn có trong danh sách.
+                         <br>&emsp;&emsp;<b>- Tổng doanh thu:</b>  Hiện thị tổng tất cả số doanh thu trong danh sách. 
+                            
+                        <br><br> - Hiển thị danh sách thông tin doanh thu ở trong hệ thống cửa hàng (Hình 20 - mục 3):
+                         <br>&emsp;&emsp;<b>- Hiển thị:</b>  Hiện thị tất cả danh sách thông tin hóa đơn toàn bộ thông tin cụ thể.
+                        </h4>
+                    </div>
+
+                    <h3 class="doc.1"><b>&emsp;3.3.	Chức năng của nhân viên kho</b></h3>
+                    <h3 class= "doc.2"><b>&emsp;&emsp;3.3.1.	Giao diện thông tin nhân viên</b><br></h3>
+                    <div>
+                        <h4>&emsp;&emsp;&emsp; - Giao diện thông tin nhân viên của nhân viên kho có các chức năng là quyền hạn giống như quản lý. Khách hàng có thể tìm hiểu <b><u>tại đây</u></b></h4>
+                    </div>
+
+                    <h3 class= "doc.2"><b>&emsp;&emsp;3.3.2.	Giao diện sản phẩm</b><br></h3>
+                    <div>
+                        <h4>&emsp;&emsp;&emsp; - Giao diện sản phẩm của nhân viên kho có các chức năng là quyền hạn giống như quản lý. Khách hàng có thể tìm hiểu <b><u>tại đây</u></b></h4>
+                    </div>
+
+                    <h3 class= "doc.2"><b>&emsp;&emsp;3.3.3.	Giao diện nhà cung cấp</b><br></h3>
+                    <div>
+                        <h4>&emsp;&emsp;&emsp; - Giao diện nhà cung cấp của nhân viên kho có các chức năng là quyền hạn giống như quản lý. Khách hàng có thể tìm hiểu <b><u>tại đây</u></b></h4>
+                    </div>
+
+                    <h3 class= "doc.2"><b>&emsp;&emsp;3.3.4.	Giao diện phòng hát</b><br></h3>
+                    <div>
+                        <h4>&emsp;&emsp;&emsp; - Giao diện phòng hát của nhân viên kho có các chức năng là quyền hạn giống như quản lý. Khách hàng có thể tìm hiểu <b><u>tại đây</u></b></h4>
+                    </div>
+
+                    <h3 class= "doc.2"><b>&emsp;&emsp;3.3.5.	Giao diện thống kê sản phẩm</b><br></h3>
+                    <div>
+                        <img src="img/hinh25.jpg" width="100%" /> <br>
+                        <h4> - Màn hình này, người dùng sẽ sử dụng dùng để thống kê sản phẩm trong cửa hàng, hệ thống sẽ tự động cập nhật số hàng còn hoặc hết trong các khoảng thời gian sử dụng như sau- Lựa chọn thống kê danh thu sản phẩm theo sự lựa chọn cụ thể sản phẩm (Hình 25 - mục 1):
+                        <br>&emsp;&emsp;<b>- Trạng thái:</b> là chọn tìm theo trạng thái mong muốn kiểm hàng(Tất cả, còn hàng, hết hàng).
+                        <br>&emsp;&emsp;<b>- Loại sản phẩm:</b> chọn loại sản phẩm mong muốn để thống kê(Bánh, kẹo, bia…)
+                        <br>&emsp;&emsp;<b>- Nhà cung cấp:</b> Chọn loại nhà cung cấp mong muốn để thống kê theo nhà cung cấp(Công Ty Cổ Phần Thực Phẩm Việt Nam – VIETFOODS, ….)
+                        <br>&emsp;&emsp;<b>- Từ ngày - Đến ngày:</b> lựa chọn theo ngày, tháng bất kì để thống kê sản phẩm mong muốn theo thời gian cố định, khi trạng thái là đã bán.
+                                
+                        <br><br> - Thống kê theo lựa chọn đã chọn ở mục 1, nếu sản phẩm thì thống kê sản phẩm thì sẽ hiện thị vào danh sách sản phẩm ở mục 4 (Hình 25 - mục 1):
+                        <br>&emsp;&emsp;<b>- Thống kê:</b> chọn thống kê để tìm danh sách thống kê sau khi đã lựa chọn cụ thể (Trạng thái, loại sản phẩm, nhà cung cấp, từ ngày, đến ngày).
+                        <br>&emsp;&emsp;<b>- Làm mới:</b> trở lại trạng thái chọn ban đầu 
+                        <br>&emsp;&emsp;<b>- In thống kê:</b> sau khi thống kê muốn in danh sách sẽ hiện ra bảng Print in thống kê (PDF, XPS, FAX…)
+                            
+                        <br><br> -  Hiển thị con số thống kê sản phẩm cụ thể sau khi thống kê ra toàn bộ danh sách sản phẩm
+                            (Hình 25 - mục 2):
+                        <br>&emsp;&emsp;<b>- Số sản phẩm:</b> Hiện thị số sản phẩm đang có trong hệ thống.
+                        <br>&emsp;&emsp;<b>- Nhà cung cấp:</b> Hiện thị số nhà cung cấp cung cấp hàng hóa cho cửa hàng đang có trong hệ thống.
+                        <br>&emsp;&emsp;<b>- Loại sản phẩm:</b> Hiện thị số loại sản phẩm đang có trong hệ thống.
+                        <br>&emsp;&emsp;<b>- Tổng chi phí nhập:</b> Hiển thị tổng chi phí nhập hàng của tất cả các sản phẩm ở danh sách có trong hệ thống được liệt kê.
+                            
+                        <br><br> - Hiển thị danh sách thông tin sản phẩm ở trong hệ thống cửa hàng (Hình 25 - mục 3):
+                        <br>&emsp;&emsp;<b>- Hiển thị:</b> danh sách các sản phẩm đã lựa chọn thống kê ở trên và hiện thị các thông tin cụ thể của sản phẩm ở danh sách
+                        </h4>
+                    </div>
+
+                    <br><br><br><br>
+                    <h4><center>Cám ơn quý khách hàng đã quan tâm sử dụng dịch vụ của chúng tôi</center></h4>
+                    <h4><center> Mọi thắc mắc xin liên hệ tel: 0333000730(Hải Nam) - mail: hainam@gmail.com</center></h4>
+
+
                     </div>
                 </section>
 
             </div>
             <div class="row">
                 <footer class="col-md-12" style="border-top:1px solid #000000">
-                    <address align="center">****NHOM06****</address>
+                    <br>
+                    <address align="center">Ứng dụng được phát triển bởi nhóm 1 - Môn PTUD.</address>
                 </footer>
             </div>
         </div>

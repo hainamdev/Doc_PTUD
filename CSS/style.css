@@ -1,0 +1,7 @@
+#mucluc OL { counter-reset: item }
+#mucluc LI { display: block }
+#mucluc LI:before { content: counters(item, ".") " "; counter-increment: item }
+
+.doc li{
+    list-style-type: square;
+}
